@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - FrontEnd Mentor</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -30,12 +30,14 @@
                     </div>
                 </div>
 
-                <div class="error-message"></div>
+                <div class="error-message-name"></div>
+
+               
 
                 <label for="email">Email Address *</label>
                 <input type="email" id="email" name="email">
 
-                <div class="error-message"></div>
+                <div class="error-message-email"></div>
 
                 <fieldset class="query-fieldset">
                     <legend>Query Type *</legend>
@@ -51,8 +53,10 @@
                             <label for="support_request">Support Request</label>
                         </div>
                     </div>
-                    <div class="error-message"></div>
+                    
                 </fieldset>
+
+                <div class="error-message-query-type"></div>
 
                 <label for="message">Message *</label>
                 <textarea id="message" name="message"></textarea>
@@ -63,10 +67,19 @@
                     <input type="checkbox" id="consent" name="consent">
                     <label for="consent">I consent to being contacted by the team *</label>
                 </div>
+               
+                <div class="error-message-consent"></div>
 
-                <div class="error-message"></div>
+                <button type="submit" id="submit" name="submit">Submit</button>
 
-                <button type="submit">Submit</button>
+                
+
+                <div class="submitted-message">
+                    
+                <img src="./images/icon-success-check.svg" alt="Success check">
+                <p>Form submitted successfully!</p>
+                </div>
+
             </form>
         </div>
     </main>
@@ -77,6 +90,8 @@
                     href="http://github.com/milennafeijo" target="_blank">Milenna Feijó</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

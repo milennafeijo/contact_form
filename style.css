@@ -65,6 +65,7 @@ main {
     background-color: var(--white);
     padding: 2.5rem;
     border-radius: 0.75rem;
+    position: relative;
 }
 
 .name_form {
@@ -115,8 +116,23 @@ main {
     width: auto;
 }
 
-.fieldset .error-message {
-    width: 100%;
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--grey-500);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--white);
+    flex-shrink: 0; 
+}
+
+input[type="radio"]:checked {
+    border: none;
+    background-image: url('./images/icon-radio-selected.svg'); 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 label {
@@ -148,12 +164,39 @@ textarea {
     margin-top: 1rem;
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--grey-500);
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--white);
+    flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked {
+    border: none;
+    background-image: url('./images/icon-checkbox-check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .consent-field label {
     margin-bottom: 0;
     cursor: pointer;
     display: inline; 
     width: auto;
 }
+
+.error-message-name, .error-message-email, .error-message-consent, .error-message-query-type, .error-message  {
+    color: var(--red);
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 
 button {
     background-color: var(--green-600);
@@ -168,6 +211,23 @@ button {
     font-size: 1rem;
     width: 100%;
 }
+
+.submitted-message {
+    background-color: var(--green-600);
+    color: var(--white);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+    display: none;
+ }
+
 
 .footer {
     display: flex;
