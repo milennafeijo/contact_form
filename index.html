@@ -18,13 +18,17 @@
             <form id="contact-form">
                 <h1>Contact Us</h1>
 
-                <label for="firstname">First Name *</label>
-                <input type="text" id="firstname" name="firstname">
+                <div class="name_form">
+                    <div class="form-group">
+                        <label for="firstname">First Name *</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
 
-                <div class="error-message"></div>
-
-                <label for="lastname">Last Name *</label>
-                <input type="text" id="lastname" name="lastname">
+                    <div class="form-group">
+                        <label for="lastname">Last Name *</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
 
                 <div class="error-message"></div>
 
@@ -33,14 +37,20 @@
 
                 <div class="error-message"></div>
 
-                <fieldset>
+                <fieldset class="query-fieldset">
                     <legend>Query Type *</legend>
-                    <input type="radio" id="general_enquiry" name="query_type" value="general">
-                    <label for="general_enquiry">General Enquiry</label>
+                    
+                    <div class="query-row">
+                        <div class="query-type-options">
+                            <input type="radio" id="general_enquiry" name="query_type" value="general">
+                            <label for="general_enquiry">General Enquiry</label>
+                        </div>
 
-                    <input type="radio" id="support_request" name="query_type" value="support">
-                    <label for="support_request">Support Request</label>
-
+                        <div class="query-type-options">
+                            <input type="radio" id="support_request" name="query_type" value="support">
+                            <label for="support_request">Support Request</label>
+                        </div>
+                    </div>
                     <div class="error-message"></div>
                 </fieldset>
 
@@ -63,7 +73,8 @@
 
     <footer>
         <div class="footer">
-            <p>Challenge by <a href="/" target="_blank">Frontend Mentor</a>. Coded by <a href="/">Milenna Feijó</a></p>
+            <p>Challenge by <a href="http://frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded by <a
+                    href="http://github.com/milennafeijo" target="_blank">Milenna Feijó</a></p>
         </div>
     </footer>
 
