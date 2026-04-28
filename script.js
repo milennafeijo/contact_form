@@ -9,7 +9,7 @@ const errorMessageConsentDiv = document.querySelector('.error-message-consent');
 const submittedMessageDiv = document.querySelector('.submitted-message');
 
 function validateForm(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const firstName = document.getElementById('firstname').value.trim();
     const lastName = document.getElementById('lastname').value.trim();
